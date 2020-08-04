@@ -47,3 +47,10 @@ body{
 .navbar-dark{
     background-color: darkslateblue;
 }
+
+.tab-content{
+     border-left : 1px solid orchid;
+     border-right : 1px solid orchid;
+     border-bottom : 1px solid orchid;
+     padding : 10px;
+}
