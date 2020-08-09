@@ -70,3 +70,10 @@ body{
     position:absolute;
 }
 
+#carouselButtons{
+    right : 0px;
+    bottom : 0px;
+    position : absolute;
+    z-index:1;
+}
+
