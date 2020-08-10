@@ -33,7 +33,7 @@
                 <li class="nav-item"> <a class="nav-link" href="contactus.html"> <span class="fa fa-address-card fa-lg"></span> Contact </a> </li>
               </ul>
               <span class="navbar-text">
-                  <a data-toggle="modal" data-target="#loginModal">
+                  <a id="LoginLink">
                       <span class="fa fa-sign-in"></span> Login
                   </a>
               </span>
@@ -77,7 +77,7 @@
         </div>
     </div>
 
-    <div class="modal fade" role="dialog" id="reservemodal">
+    <div class="modal fade" role="dialog" id="reserveModal">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -150,7 +150,7 @@
                 </div>
 
                 <div class="col-12 col-sm align-self-center">
-                     <a class="btn btn-warning nav-link"  data-toggle="modal" data-target="#reservemodal" >
+                     <a class="btn btn-warning nav-link"  id="ReserveLink" >
                        <span class="fa fa-check-circle"></span> Reserve Table  
                     </a>                
                 </div>
@@ -294,55 +294,24 @@
                         <div class="form-group row">
                             <label class="col-sm-4 col-form-label" for="numguests">Number of Guests</label>
                             <div class="radio radio-info col-md-8">
-                                
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios1" value="1">
- 
-    1
- 
-  </label>
- 
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios2" value="2">
- 
-    2
- 
-  </label>
- 
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios3" value="3" >
- 
-    3
- 
-  </label>
-
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios4" value="4" >
- 
-    4
- 
-  </label>
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios5" value="5" >
- 
-    5
- 
-  </label>
-  <label class="radio-inline">
- 
-    <input type="radio" name="num" id="Radios6" value="6" >
- 
-    6
- 
-  </label>
-              
-              
-              
+                                 <label class="radio-inline">
+                                    <input type="radio" name="num" id="Radios1" value="1"/> 1
+                                </label> &nbsp;&nbsp;
+                                <label class="radio-inline ">
+                                     <input type="radio" name="num" id="Radios2" value="2"/>  2
+                                </label> &nbsp;&nbsp;
+                                <label class="radio-inline ">
+                                    <input type="radio" name="num" id="Radios3" value="3"/>   3
+                                </label> &nbsp;&nbsp;
+                                <label class="radio-inline">
+                                    <input type="radio" name="num" id="Radios4" value="4"/>   4
+                                </label> &nbsp;&nbsp;
+                                <label class="radio-inline">
+                                     <input type="radio" name="num" id="Radios5" value="5"/>  5
+                                </label> &nbsp;&nbsp;
+                                <label class="radio-inline ">
+                                    <input type="radio" name="num" id="Radios6" value="6"/>   6
+                               </label>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -411,49 +380,8 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<!--     *************************************  TOOLTIP 
-    <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-</script> -->
+<script src="js/scripts.js"></script>
 
-<!----     ************************************  JQUERY FOR PAUSE N PLAY BUTTONS , CAROUSEL
-<script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel({interval : 2000});
-
-        $("#carousel-pause").click(function(){
-            $("#mycarousel").carousel('pause');
-        })
-
-        $('#carousel-play').click(function(){
-            $('#mycarousel').carousel('cycle');
-        })
-    })
-</script>  -->
-
-<script>
-    $(document).ready(function(){
-        $('#mycarousel').carousel({interval : 2000});
-
-        $('#carouselButton').click(function(){
-            if( $('#carouselButton').children('span').hasClass('fa-pause')) {         
-                $('#mycarousel').carousel('pause');
-                $('#carouselButton').children('span').removeClass('fa-pause');
-                $('#carouselButton').children('span').addClass('fa-play');
-            }
-        else{
-                $('#mycarousel').carousel('cycle');
-                $('#carouselButton').children('span').removeClass('fa-play');
-                $('#carouselButton').children('span').addClass('fa-pause');
-            }
-        })
-
-        
-        
-    })
-</script>
 
 </body>
 
