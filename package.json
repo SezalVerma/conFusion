@@ -1,10 +1,13 @@
 {
+  "homepage": "https://sezalverma.github.io/conFusion",
   "name": "confusion",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "dist/index.html",
   "scripts": {
     "start": "npm run watch:all",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
     "scss": "node-sass  css/styles.scss  css/styles.css",
@@ -48,6 +51,7 @@
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^4.0.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   }
